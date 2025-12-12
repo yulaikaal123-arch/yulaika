@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WEB-BERITA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-size:30px">Menit.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNews" aria-controls="navbarNews" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse"     id="navbarNews">
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <li class="nav-item"><a class="nav-link active" href="index.html">Nasional</a></li>
+    
+    <li class="nav-item"><a class="nav-link" href="internasional.html">Internasional</a></li>
+    
+    <li class="nav-item"><a class="nav-link" href="olahraga.html">Olahraga</a></li> 
+    <li class="nav-item"><a class="nav-link" href="teknologi.html">Teknologi</a></li>
+    <li class="nav-item"><a class="nav-link" href="hiburan.html">Hiburan</a></li>
+  </ul>
+</div>
+
+    </div>
+  </nav>
+  <!-- MARQUEE BAR -->
+  <div class="bg-danger text-white py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <marquee behavior="scroll" direction="left" class="fw-semibold">
+        [Populer] Pemerintah umumkan kebijakan baru ekonomi digital • Liga 1: Persija kalahkan Persib 3-1 • Harga BBM turun minggu ini • iPhone 16 resmi meluncur di Indonesia
+      </marquee>
+      <div id="clock" class="fw-bold px-2 text-end" style="width:300px"></div>
+    </div>
+  </div>
+  <div class="container">
+      <div class="row">
+          <!-- Carousel Berita -->
+      <div class="col-md-8">
+        <div id="carouselNews" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/gambar1.jpg" class="d-block w-100 rounded" alt="Berita 1">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Berita Utama Hari Ini</h5>
+                <p>Pemerintah siapkan strategi baru hadapi ekonomi global 2025.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/gambar2.jpg" class="d-block w-100 rounded" alt="Berita 2">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Timnas Indonesia Menang!</h5>
+                <p>Indonesia kalahkan Vietnam dengan skor 2-0.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/gambar3.jpg" class="d-block w-100 rounded" alt="Berita 3">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>iPhone 16 Resmi Dirilis</h5>
+                <p>Apple meluncurkan produk terbaru dengan fitur AI canggih.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/gambar4.jpg" class="d-block w-100 rounded" alt="Berita 4">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Konser Musik Terbesar 2025</h5>
+                <p>Ribuan penonton padati stadion untuk menyaksikan konser internasional.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/gambar5.jpg" class="d-block w-100 rounded" alt="Berita 5">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                <h5>Pemilu 2025 Semakin Dekat</h5>
+                <p>Partai politik mulai deklarasikan calon presiden.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNews" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNews" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      </div>
+  </div>
+  <!-- List Berita Populer -->
+      <div class="col-md-4">
+        <div class="card h-100 p-4 bg-dark border-0">
+        <h4 class="mb-3 text-center text-light">BERITA POPULER</h4>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Demo pati ricuh</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Ribut antar pelajar</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Penebangan hutan liar</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Pencemaran laut akibat pabrik</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">MBG banyak keracunan</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Polusi udara di Jakarta</a>
+        <a href="" class="btn btn-light mb-1 text-start p-3">Kebijakan Ekonomi Baru 2025</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+    <hr>
+    <h3>Berita Utama</h3>
+    <hr>
+        <div class="row">
+            <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar1.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Kericunan anak sekolah</h6>
+            <p class="news-summary">Total ada 17 pelajar dari beberapa SMK dan SMA yang berhasil kami amankan. Mereka terbukti membawa senjata tajam dan mengaku sudah membuat janji untuk tawuran dengan kelompok pelajar lain</p>
+            <a href="berita-kericuhan-anak-sekolah.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar2.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Demo Pati berujung ricuh</h6>
+            <p class="news-summary">Dalam aksi anarkis tersebut, satu unit mobil dinas polisi dilaporkan dibakar massa. Bentrokan fisik antara demonstran dan aparat keamanan tak terhindarkan, yang memaksa polisi menembakkan gas air mata dan menggunakan water cannon untuk membubarkan kerumunan.</p>
+            <a href="berita-demo-pati-ricuh-2025.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar3.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Polusi udara di Jakarta</h6>
+            <p class="news-summary">Kondisi terbaru: polusi udara makin mengkhawatirkan
+
+Pada 28 November 2025, kualitas udara di Jakarta tercatat paling buruk di Indonesia — dengan Indeks Standar Pencemar Udara (ISPU) 119, masuk kategori tidak sehat.</p>
+            <a href="berita-polusi-udara-dijakarta-2025.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar4.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Penebangan hutan liar di Indonesia</h6>
+            <p class="news-summary">Menurut Auriga Nusantara, tahun 2024 Indonesia kehilangan sekitar 261.575 hektar hutan — dan ini menjadikannya satu tahun dengan deforestasi tinggi sejak 2021. 
+
+Namun menurut data resmi dari Kementerian Kehutanan Republik Indonesia (Kemenhut), deforestasi 2024 “netto” tercatat sekitar 175.400 hektar.</p>
+            <a href="berita-Penebangan-hutan-liar-2025.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar5.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Sampah Industri mencemari lautan</h6>
+            <p class="news-summary">Sebuah laporan 2025 memperkirakan bahwa sekitar 620.000 ton sampah plastik dari daratan — termasuk sampah dari rumah tangga dan industri — masuk ke laut Indonesia setiap tahun.</p>
+            <a href="berita-sampah-industri-mencemari-lautan-2025.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+     
+      <!-- Loop berita -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/gambar9.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h6 class="card-title">Erupsi gunung semeru terjadi lagi di 2025</h6>
+            <p class="news-summary">Pada 19 November 2025, Semeru meletus dengan kolom abu dan asap besar — dipantau ada peningkatan aktivitas vulkanik dari kawah. 
+
+Karena bahayanya, status darurat / peringatan dikeluarkan: Masyarakat diimbau menjauh dari radius bahaya — terutama di sekitar aliran sungai dan alur lahar.</p>
+            <a href="berita-Erupsi-gunung-semeru.html" class="nav-link text-primary">Selengkapnya...</a>
+          </div>
+        </div>
+      </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+  <footer class="bg-dark text-light p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Menit.com</h5>
+          <p>Portal berita terpercaya yang menyajikan informasi terkini, akurat, dan mendalam dari berbagai bidang.</p>
+        </div>
+        <div class="col-md-4">
+  <h5>Kategori</h5>
+  <ul class="list-unstyled">
+    <li><a href="index.html" class="nav-link">Nasional</a></li>
+    <li><a href="internasional.html" class="nav-link">Internasional</a></li>
+    <li><a href="teknologi.html" class="nav-link">Teknologi</a></li>
+    <li><a href="olahraga.html" class="nav-link">Olahraga</a></li>
+    <li><a href="hiburan.html" class="nav-link">Hiburan</a></li>
+  </ul>
+</div>
+        <div class="col-md-4">
+          <h5>Kontak</h5>
+          <p>Email: redaksi@menit.com<br>Telepon: +62 812 3456 7890</p>
+          <div>
+            <a href="#" class="me-3">Facebook</a>
+            <a href="#" class="me-3">Twitter</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">© 2025 Menit.com. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    // Menampilkan jam real-time
+    setInterval(() => {
+      const now = new Date();
+      document.getElementById('clock').textContent = now.toLocaleString('id-ID');
+    }, 1000);
+  </script>
+  </body>
+</html>    
